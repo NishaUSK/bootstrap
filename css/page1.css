@@ -1,0 +1,140 @@
+.archi-box-row-one{
+    height: 320px;
+		/* height: 220px; */
+    background: radial-gradient(#6e6e6e,#2f2f2f);
+    background: -webkit-radial-gradient(#6e6e6e,#2f2f2f);
+    background: -moz-radial-gradient(#6e6e6e,#2f2f2f);
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+/* mobile device image orientation */
+@media(max-width: 400px) {
+	.archi-box-row-one {
+		height: 199px;
+	}
+
+	.archi-box-row-one figure {
+		margin-bottom: 15px !important;
+	}
+
+	.archi-box-row-one:hover figure {
+	    bottom: -15px !important;
+	}
+
+}
+
+.archi-box-row-one figure {
+    position: absolute;
+    text-align: left;
+    padding: 10px 19px 19px 19px;
+    width: 100%;
+    height: 100%;
+    /*border-top: 1px solid #fff;*/
+    background: rgba(0, 0, 0, 0.71);
+    bottom: -88%;
+    margin-bottom: 0px;
+
+    transition: ease-in-out .5s;
+}
+.archi-box-row-one:hover figure {
+    bottom: 0;
+}
+.archi-box-row-one figure h3{
+    margin: 0;
+    padding-bottom: 10px;
+}
+.archi-box-row-one img{
+    height: 150%;
+}
+
+/* @media(max-width: @screen-xs-max) {
+	.archi-box-row-one img{
+		height: 200px;
+	}
+} */
+
+
+.contact-form {
+  width: 90%;
+  color: white;
+}
+
+.contact-form input {
+  color: white !important;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 0.5px solid white;
+}
+
+.contact-form input .placeholder-text {
+  color: white !important;
+}
+
+.form-group {
+  color: white !important;
+}
+
+.form-group .form-text {
+  color: #F7A32E !important;
+}
+
+
+
+a {
+    text-decoration: none;
+    color: #0645ad;
+    background: none;
+}
+user agent stylesheet
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
+
+
+.footer-container {
+    background-color: black;
+    margin-bottom: 0 !important;
+}
+
+.footer-text {
+  color: white;
+}
+
+
+html{
+    height: 100%;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+header{
+   /* We want the header to have a static height,
+   it will always take up just as much space as it needs.  */
+   /* 0 flex-grow, 0 flex-shrink, auto flex-basis */
+   flex: 0 0 auto;
+}
+
+.main-content{
+   /* By setting flex-grow to 1, the main content will take up
+   all of the remaining space on the page.
+   The other elements have flex-grow: 0 and won't contest the free space. */
+   /* 1 flex-grow, 0 flex-shrink, auto flex-basis */
+   flex: 1 0 auto;
+}
+
+footer{
+   /* Like the header, the footer will have a static height - it shouldn't grow or shrink.  */
+   /* 0 flex-grow, 0 flex-shrink, auto flex-basis */
+   flex: 0 0 auto;
+}

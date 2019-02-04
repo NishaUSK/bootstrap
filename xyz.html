@@ -1,0 +1,25 @@
+
+(For electronicgadgets_list.html)
+
+
+{% for electronicgadgets in electronicgadgetss %}
+    <div>
+        <p>launch: {{ electronicgadgets.launch_date }}</p>
+        <h2><a href="">{{ electronicgadgets.name }}</a></h2>
+        <p>{{ electronicgadgets.model|linebreaksbr }}</p>
+    </div>
+{% endfor %}
+
+
+
+
+Electronicgadgets.objects.filter(expiry_date__lte=timezone.now()).order_by('-launch_date')
+
+
+Kitchen.objects.filter(expiry_date__lte=timezone.now()).order_by('manufactured_date')
+
+Furnitures.objects.order_by('prize')
+
+Plasticmaterials.objects.order_by('prize')
+
+Cars.objects.order_by('launch_date')
